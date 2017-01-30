@@ -9,7 +9,7 @@ jdk:
     - openjdk7
 
 before_install:
-    - mysql -u root < script.sql
+    - mysql -u root < mysql.sql
 
 script:
     - mvn clean test
@@ -26,4 +26,4 @@ sudo:
     - false
 
 notifications:
-    - email: false  # Desactivamos las notificaciones por email para evitar spam
+  email: false
