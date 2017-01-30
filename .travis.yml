@@ -12,6 +12,7 @@ before_install:
     - mysql -u root < mysql.sql
 
 script:
+	- mvn clean test
     - ls -lah
 
 cache:
